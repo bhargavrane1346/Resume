@@ -1,0 +1,165 @@
+[9:58 pm, 22/4/2025] BR: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhargav Rane - Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #050827;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      border-bottom: 2px solid #061729;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+…
+[10:06 pm, 22/4/2025] BR: Your current resume site is already using *Bootstrap 5*, which gives you a great start on responsiveness. I’ll enhance it further with a few small tweaks to make sure it looks great on all screen sizes:
+
+- Improved text scaling for small devices
+- Responsive layout padding
+- Font sizing and heading adjustments
+
+Here’s your *updated, responsive version*:
+
+---
+
+### ✅ Final Responsive index.html
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhargav Rane - Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #050827;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #061729;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 576px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 0.95rem;
+      }
+
+      .section h2 {
+        font-size: 1.3rem;
+      }
+
+      .container {
+        padding: 1rem 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bhargav Rane</h1>
+    <p>Mumbai | bhargav.rane@vit.edu.in | 8104009443</p>
+  </header>
+
+  <div class="container">
+    <section class="section">
+      <h2>Profile Summary</h2>
+      <p>
+        I am a proactive problem-solver with strong interpersonal and communication skills, allowing me to work well with a variety of teams and stakeholders. I'm dedicated to delivering top-notch outcomes and am always looking for chances to advance professionally.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>SCARALAMBOT:</strong> An electronic scarecrow using PIR, ultrasonic, and thermal sensors to detect organisms in fields and repel them with ultrasonic speakers.
+        </li>
+        <li>
+          <strong>E-NECKWRMR:</strong> A smart neck warmer that relieves fatigue, maintains blood circulation, and offers comfort and protection from wind and cold.
+        </li>
+        <li>
+          <strong>CCDA – Car Crash Detection and Assistance:</strong> A real-time accident detection system using AI and sensors, enhancing road safety through timely alerts.
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>C Programming</li>
+        <li>LT Spice</li>
+        <li>MATLAB</li>
+        <li>CANVA</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of Mumbai:</strong> B.E. in Electronics Engineering</li>
+        <li><strong>Maharashtra State Board:</strong> HSC (2020)</li>
+        <li><strong>Maharashtra State Board:</strong> SSC (2018)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li>Marathi</li>
+        <li>Hindi</li>
+        <li>English</li>
+        <li>German</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
